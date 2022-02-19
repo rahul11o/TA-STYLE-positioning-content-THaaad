@@ -46,64 +46,73 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
-/* Custom styles */
-.container01{
-max-width: 1200px;
-margin: 50px auto;
-background-color: rgb(231, 226, 226);
-height: 850px;
+   /* Custom styles */
 
+*,
+*::before,
+*::after{
+	box-sizing: border-box;
 }
-.container02{
-    background-color:white;
-    max-width: 900px;
-	margin: 30px auto;
-	 height: 700px;
+body{
+	font-size: 18px;
+	line-height: 1.2;
+	background-color: rgb(231, 226, 226);
+}
+.container{
+	max-width: 1000px;
+	margin: 24px auto;
+	padding: 36px;
 	
-	
-}
+	background-color: white;
+	}
 
-	
-h1{
-    font-size: 40px;
-    text-align: center;
-	padding-top: 20px;
-	
-}
-h2{
-	font-size: 30px;
-}
-
-p{
-	margin: 15px 0px;
-}
-
-.column{
-	width: 25%;
-	float: left;
-padding: 50px;
-box-sizing: border-box;}
-
-	
-
-.column02{
-	width: 50%;
-}
-
-.column03, .column01{ 
-	margin-top: 30px;}
-
-.column01 p{
-	margin: 0px;
-}
+/* Clearfix */
 
 .clearfix::before, .clearfix::after{
 	content:"";
 	display: table;
 }
 .clearfix::after{
-	clear: both;
+	clear: both}
+
+/*  Header */
+
+h1{
+    font-size: 46px;
+    text-align: center;	
+	margin-top: 12px;
+}
+
+/* Aside & Section */
+
+h2{
+	font-size: 36px;
+	
+}
+aside{
+	width: 25%;
+	margin-top: 36px;
+}
+section{
+ width: 50%;
+ 
+}
+aside, section{
+	float: left;
+}
+article p{
+ margin: 16px 0px;
+}
+.right-aside p{
+  font-size:22px;
+  margin:0px 24px;
+ 
 }
 img{
 	width: 100%;
 }
+.gap{
+	padding: 0px 22px;
+}
+
+/* The End */
