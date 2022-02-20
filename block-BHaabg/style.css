@@ -47,7 +47,12 @@ table {
 	border-spacing: 0;
 }
 /*  Custom Styles   */
-/* Header */
+
+*,
+*::before,
+*::after{
+	box-sizing: border-box;
+}
 
 .clearfix::before,
 .clearfix::after{
@@ -57,20 +62,21 @@ table {
 .clearfix::after{
 	clear: both;
 }
-.header{
-	background-color: rgb(247, 241, 241);
-	height: 200px;
-	line-height: 200px;
-	position: fixed;
-	width: 100%;
-	
-	
-}
-	
+
+/* Container */
 .container{
-	
 	max-width: 1200px;
 	margin: 0px auto;
+}
+
+/* Header */
+
+
+.header{
+	background-color: rgb(250, 244, 244);
+    padding: 24px 0px;
+	position: fixed;
+	width: 100%;
 	
 	
 }
@@ -78,80 +84,76 @@ table {
 	float: left;
 }
 .brand img{
-	vertical-align: middle;
+	border-radius: 4px;
 }
 .nav{
-	float:right;
+	float: right;
+	position: relative;
+	top: 48px;
 }
 .nav a{
-	font-size: 50px;
+	font-size: 48px;
 	color: white;
 	text-decoration: none;
 	margin-left: 15px;
 	color: #223969;
 }
-.section01{
-	padding-top: 300px;
-}
-	
+/* section */
 
-.section02{
-padding-top: 100px;
-	
+.hero-section{
+    padding-top: 300px;
+} 
+h2{
+	font-size: 35px;
+	margin-bottom: 48px;
 }
-
+p{
+	font-size: 25px;
+	line-height: 1.6;
+}
 .article{
-	
 	float: left;
 	width: 50%;
-	
 }
 .article-image {
 	float: right;
 	width: 50%;
-	
-	
+	border: 1px solid rgb(250, 245, 245);	
 }
 .article-image img{
 	width: 100%;
 }
-h1{
-	font-size: 35px;
-	margin-bottom: 80px;
-}
-p{
-	font-size: 25px;
-	line-height: 40px;
-	
-}
+/* second-section */
 
+.second-section{
+    padding-top: 100px;
+}
+h1{
+	font-size: 48px;
+	text-align: center;
+	color: #020b1f;
+}
 .row img{
 	width: 33.333%;
 	float: left;
 	height: 250px;
-	margin-bottom: 75px;
-	box-sizing: border-box;
-	
+	padding: 16px;
 }
-.middle{
-	padding: 0px 15px;}
 
 /* footer */
 footer{
 	background-color:rgb(247, 241, 241);
-	padding: 80px;
-	font-size:40px ;
+	padding: 40px;
+	font-size:40px;
+	margin-top: 72px;
 }
 
 .footer small{
-	float: left;
-	
+	float: left;	
 }
 
 .footer nav{
 	float: right;
-	
-	
 }
 .footer a{
 	text-decoration: none;
@@ -162,11 +164,11 @@ footer{
 	right: 15px;
 	bottom: 15px;
 	background-color:rgb(248, 231, 231) ;
-	height: 80px;
-	width: 80px;
-	
+	height: 60px;
+	width: 60px;
+	font-size: 20px;
 	border-radius: 100%;
-	line-height: 80px;
+	line-height: 60px;
 	text-align: center;
 
 	
